@@ -1,6 +1,6 @@
 import React from "react";
 import newFaver from "../img/newFaver.png";
-import { Fireworks } from "fireworks/lib/react";
+// import { Fireworks } from "fireworks/lib/react";
 
 import { useState, useEffect } from "react";
 
@@ -15,7 +15,7 @@ import allinone4 from "../img/allinone4.jpeg";
 import allinone5 from "../img/allinone5.jpeg";
 import onlyElvis from "../img/onlyElvis.png";
 
-import lastbg from "../img/lastbg.jpeg";
+// import lastbg from "../img/lastbg.jpeg";
 
 import jhun from "../img/jhun.jpeg";
 import promise from "../img/promise.jpeg";
@@ -43,14 +43,14 @@ function Home() {
     objectFit: "cover",
   };
 
-  const lastbgCon = {
-    backgroundImage: `${lastbg}`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "cover",
-    backgroundSize: "cover",
-    width: "100%",
-    objectFit: "cover",
-  };
+  // const lastbgCon = {
+  //   backgroundImage: `${lastbg}`,
+  //   backgroundRepeat: "no-repeat",
+  //   backgroundPosition: "cover",
+  //   backgroundSize: "cover",
+  //   width: "100%",
+  //   objectFit: "cover",
+  // };
 
   const date = [
     {
@@ -95,16 +95,16 @@ function Home() {
 
   const [toggled, setToggled] = useState(false);
 
-  let fxProps = {
-    count: 3,
-    interval: 200,
-    colors: ["#cc3333", "#4CAF50", "#81C784"],
-    calc: (props, i) => ({
-      ...props,
-      x: (i + 1) * (window.innerWidth / 3) - (i + 1) * 100,
-      y: 200 + Math.random() * 100 - 50 + (i === 2 ? -80 : 0),
-    }),
-  };
+  // let fxProps = {
+  //   count: 3,
+  //   interval: 200,
+  //   colors: ["#cc3333", "#4CAF50", "#81C784"],
+  //   calc: (props, i) => ({
+  //     ...props,
+  //     x: (i + 1) * (window.innerWidth / 3) - (i + 1) * 100,
+  //     y: 200 + Math.random() * 100 - 50 + (i === 2 ? -80 : 0),
+  //   }),
+  // };
 
   const [time, setTime] = useState("");
   console.log(time);
@@ -291,17 +291,27 @@ function Home() {
         <h2 className="text-4xl pt-10 pb-5 font-serif">Team</h2>
         <h1 className="text-4xl pb-10 font-serif">Bridesmaids</h1>
         {/* copy past */}
-        <div style={{ width: "80%", margin: "auto", padding: "10px" }}>
-          <div className="carousel carousel-center p-6 space-x-4 rounded-box">
+        <div style={{ width: "100%", margin: "auto", padding: "10px" }}>
+          <div className="w-full carousel carousel-center p-6 space-x-4 rounded-box">
             <div className="carousel-item flex-col">
-              <img src={jhun} className="rounded-box" width={300} />
+              <img
+                alt="img-text"
+                src={jhun}
+                className="rounded-box"
+                width={300}
+              />
               <div>
                 <h2 style={{ fontSize: "22px", padding: "10px" }}>John Odey</h2>
                 <h3 style={{ fontSize: "18px" }}>Bridesmaids</h3>
               </div>
             </div>
             <div className="carousel-item flex-col">
-              <img src={promise} className="rounded-box" width={340} />
+              <img
+                alt="img-text"
+                src={promise}
+                className="rounded-box"
+                width={340}
+              />
               <div>
                 <h2 style={{ fontSize: "22px", padding: "10px" }}>
                   Promise Peters
@@ -310,7 +320,12 @@ function Home() {
               </div>
             </div>
             <div className="carousel-item flex-col">
-              <img src={bf} className="rounded-box" width={340} />
+              <img
+                alt="img-text"
+                src={bf}
+                className="rounded-box"
+                width={340}
+              />
               <div>
                 <h2 style={{ fontSize: "22px", padding: "10px" }}>
                   Adoga James
@@ -319,14 +334,24 @@ function Home() {
               </div>
             </div>
             <div className="carousel-item flex-col">
-              <img src={idm} className="rounded-box" width={300} />
+              <img
+                alt="img-text"
+                src={idm}
+                className="rounded-box"
+                width={300}
+              />
               <div>
                 <h2>Ephraim Achema</h2>
                 <h3 style={{ fontSize: "18px" }}>Bridesmaids</h3>
               </div>
             </div>
             <div className="carousel-item flex-col">
-              <img src={yinka} className="rounded-box" width={420} />
+              <img
+                alt="img-text"
+                src={yinka}
+                className="rounded-box"
+                width={420}
+              />
               <div>
                 <h2 style={{ fontSize: "22px", padding: "10px" }}>
                   Emmanuel Alagbe
@@ -335,7 +360,12 @@ function Home() {
               </div>
             </div>
             <div className="carousel-item flex-col">
-              <img src={adoge} className="rounded-box" width={300} />
+              <img
+                alt="img-text"
+                src={adoge}
+                className="rounded-box"
+                width={300}
+              />
               <div>
                 <h2 style={{ fontSize: "22px", padding: "10px" }}>
                   Adekunle Samuel
@@ -344,7 +374,12 @@ function Home() {
               </div>
             </div>
             <div className="carousel-item flex-col">
-              <img src={yf} className="rounded-box" width={400} />
+              <img
+                alt="img-text"
+                src={yf}
+                className="rounded-box"
+                width={400}
+              />
               <div>
                 <h2 style={{ fontSize: "22px", padding: "10px" }}>
                   IDAGU Timothy
@@ -360,17 +395,27 @@ function Home() {
         <h2 className="text-4xl pt-10 pb-5 font-serif">Team</h2>
         <h1 className="text-5xl pb-10 font-serif">Groomsmen</h1>
 
-        <div style={{ width: "80%", margin: "auto", padding: "10px" }}>
-          <div className="carousel carousel-center p-6 space-x-4 rounded-box">
+        <div style={{ width: "100%", margin: "auto", padding: "10px" }}>
+          <div className="w-full carousel carousel-center p-6 space-x-4 rounded-box">
             <div className="carousel-item flex-col">
-              <img src={jhun} className="rounded-box" width={300} />
+              <img
+                alt="img-text"
+                src={jhun}
+                className="rounded-box"
+                width={300}
+              />
               <div>
                 <h2 style={{ fontSize: "22px", padding: "10px" }}>John Odey</h2>
                 <h3 style={{ fontSize: "18px" }}>Groomsmen</h3>
               </div>
             </div>
             <div className="carousel-item flex-col">
-              <img src={promise} className="rounded-box" width={340} />
+              <img
+                alt="img-text"
+                src={promise}
+                className="rounded-box"
+                width={340}
+              />
               <div>
                 <h2 style={{ fontSize: "22px", padding: "10px" }}>
                   Promise Peters
@@ -379,7 +424,12 @@ function Home() {
               </div>
             </div>
             <div className="carousel-item flex-col">
-              <img src={bf} className="rounded-box" width={340} />
+              <img
+                alt="img-text"
+                src={bf}
+                className="rounded-box"
+                width={340}
+              />
               <div>
                 <h2 style={{ fontSize: "22px", padding: "10px" }}>
                   Adoga James
@@ -388,7 +438,12 @@ function Home() {
               </div>
             </div>
             <div className="carousel-item flex-col">
-              <img src={idm} className="rounded-box" width={300} />
+              <img
+                alt="img-text"
+                src={idm}
+                className="rounded-box"
+                width={300}
+              />
               <div>
                 <h2 style={{ fontSize: "22px", padding: "10px" }}>
                   Ephraim Achema
@@ -397,7 +452,12 @@ function Home() {
               </div>
             </div>
             <div className="carousel-item flex-col">
-              <img src={yinka} className="rounded-box" width={420} />
+              <img
+                alt="img-text"
+                src={yinka}
+                className="rounded-box"
+                width={420}
+              />
               <div>
                 <h2 style={{ fontSize: "22px", padding: "10px" }}>
                   Emmanuel Alagbe
@@ -406,7 +466,12 @@ function Home() {
               </div>
             </div>
             <div className="carousel-item flex-col">
-              <img src={adoge} className="rounded-box" width={300} />
+              <img
+                alt="img-text"
+                src={adoge}
+                className="rounded-box"
+                width={300}
+              />
               <div>
                 <h2 style={{ fontSize: "22px", padding: "10px" }}>
                   Adekunle Samuel
@@ -415,7 +480,12 @@ function Home() {
               </div>
             </div>
             <div className="carousel-item flex-col">
-              <img src={yf} className="rounded-box" width={400} />
+              <img
+                alt="img-text"
+                src={yf}
+                className="rounded-box"
+                width={400}
+              />
               <div>
                 <h2 style={{ fontSize: "22px", padding: "10px" }}>
                   IDAGU Timothy

@@ -43,9 +43,9 @@ function Navbar() {
       <ul
         className={`${
           nav
-            ? "text-white opacity-100 transform translate-x-0"
+            ? "text-white opacity-100 transform translate-x-0 backdrop-blur"
             : "opacity-0 transform -translate-y-full"
-        } transition-transform absolute top-0 left-0 w-full h-screen bg-zinc-800/80 flex flex-col justify-center items-center text-2xl`}
+        } transition-transform absolute top-0 left-0 w-full h-screen bg-zinc-800/80 flex flex-col justify-center gap-16 items-center text-2xl`}
       >
         <Link onClick={handleNav} to="/">
           <li>Home</li>
